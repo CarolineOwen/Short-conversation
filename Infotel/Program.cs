@@ -11,7 +11,7 @@ static string functionDemanderNom(int numeroDeLaPersonne)
         nom = nom.Trim();
         if (nom == "")
         {
-            Console.WriteLine("le nom ne doit pas être vide");
+            Console.WriteLine("le prénom ne doit pas être vide");
         }
 
     }
@@ -36,7 +36,7 @@ static string functionDemanderNom(int numeroDeLaPersonne)
             }
             catch
             {
-                Console.WriteLine("erreur, veuillez entrer un âge valide");
+                Console.WriteLine("Erreur, veuillez entrer un âge valide");
             }
         }
     return age_num;
@@ -65,15 +65,15 @@ static void functionAfficherInfos(string nom, int age, float taille = 0)
     }
     else if(age == 17)
     {
-        Console.WriteLine("Vous serez bientot majeur");
+        Console.WriteLine("Vous serez bientôt majeur");
     }
     else if (age == 18)
     {
-        Console.WriteLine("Vous etes tout juste majeur");
+        Console.WriteLine("Vous êtes tout juste majeur");
     }
     else if ((age >= 12)&&(age<18 ))
     {
-        Console.WriteLine("Vous etes adolescent");
+        Console.WriteLine("Vous êtes adolescent");
     }
     else if (age >= 18)
     {
@@ -85,7 +85,7 @@ static void functionAfficherInfos(string nom, int age, float taille = 0)
     }
      if(taille != 0)
     {
-        Console.WriteLine("vous faites " + taille + " de hauteur");
+        Console.WriteLine("Vous faites " + taille + " m de hauteur");
     }
   
 }
@@ -101,15 +101,15 @@ functionAfficherInfos(nom2, age2);
 Console.WriteLine($"Merci d'avoir participé {nom1} et {nom2}");
 
 
-Console.WriteLine();
-Console.WriteLine("Salut " + nom1 + ", tu as " + age1 + " ans.");
+//Console.WriteLine();
+//Console.WriteLine("Salut " + nom1 + ", tu as " + age1 + " ans.");
 
-    Console.WriteLine("Bientôt tu auras " + (age1+1) + " ans.");
+//    Console.WriteLine("Bientôt tu auras " + (age1+1) + " ans.");
 
-Console.WriteLine();
-Console.WriteLine("Salut " + nom2 + ", tu as " + age2 + " ans.");
+//Console.WriteLine();
+//Console.WriteLine("Salut " + nom2 + ", tu as " + age2 + " ans.");
 
-Console.WriteLine("Bientôt tu auras " + (age2 + 1) + " ans.");
+//Console.WriteLine("Bientôt tu auras " + (age2 + 1) + " ans.");
 
 //const int NB_PERSONNES = 3;
 
